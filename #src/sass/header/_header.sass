@@ -1,0 +1,158 @@
+.header
+    min-height: 45px
+    position: absolute
+    right: 120px
+    top: 60px
+    &-contacts
+        display: flex
+        align-items: center
+        &-mobile
+            display: none
+        &-phone
+            font-weight: 300
+            font-size: 30px
+            line-height: 41px
+            margin-right: 50px
+            position: relative
+            &::before
+                transition: all 0.3s ease-in-out
+                position: absolute
+                content: ''
+                left: 0
+                bottom: 0
+                width: 0%
+                height: 2px
+                background: #161C23
+            &:hover
+                &::before
+                    width: 100%
+        &-block
+            &-item
+                &:not(:last-child)
+                    margin-right: 15px
+                svg
+                    transition: all 0.3s ease-in-out
+                    path
+                        transition: all 0.3s ease-in-out
+                &:hover
+                    svg
+                        transform: scale(1.1)
+                        path
+                            fill: #fff
+    &-menu
+        position: fixed
+        left: 0px
+        top: 0px
+        width: 320px
+        height: 100%
+        padding: 70px 30px 70px 60px
+        z-index: 1000
+        &-logo
+            font-family: 'Manrope-Bold', sans-serif
+            font-weight: 600
+            font-size: 43px
+            line-height: 28px
+            text-transform: uppercase
+            position: relative
+            z-index: 2
+            transition: all 0.2s ease-in-out
+            &-des
+                position: absolute
+                left: 0
+                top: 140px
+                padding-left: 30px
+            span
+                font-family: 'Manrope-ExtraLight', sans-serif
+                font-weight: 200
+                font-size: 20px
+            &-active
+                transform: translateX(100vh)
+            &-title
+                font-family: 'Manrope-Medium', sans-serif
+                font-weight: 500
+                font-size: 18px
+                line-height: 25px
+                text-transform: uppercase
+                position: relative
+            &-line
+                width: 1px
+                min-height: 406px
+                background: #161C23
+                margin: 40px 0
+            &__wrapper
+                display: flex
+                align-items: center
+                writing-mode: tb-rl
+                transform: rotate(-180deg)
+.menu-icon
+    z-index: 19
+    position: relative
+    width: 60px
+    height: 60px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    right: 0px
+    transition: all 0.3s ease-in-out
+    // z-index: 1000
+    &-active
+        margin-left: auto
+.menu-icon-line::before
+    position: absolute
+    left: 0
+    top: -10px
+    content: ''
+    width: 60px
+    height: 2px
+    background-color: #161C23
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+.menu-icon-line
+    position: absolute
+    left: 0
+    top: 10px
+    content: ''
+    width: 60px
+    height: 2px
+    background-color: #161C23
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+.menu-icon.menu-icon-active .menu-icon-line
+    transform: rotate(-45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+.menu-icon.menu-icon-active .menu-icon-line::before
+    transform: rotate(90deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+.header-menu-wrapper
+    position: absolute
+    top: 0
+    left: -100vh
+    max-width: 320px
+    width: 100%
+    min-height: 100vh
+    max-height: 100vh
+    height: 100%
+    padding: 200px 30px
+    transition: transform 0.2s ease-in
+    background: #FFFFFF
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2)
+    overflow: auto
+    &-item
+        margin: 10px 0
+        a
+            position: relative
+            &::before
+                transition: all 0.3s ease-in-out
+                position: absolute
+                content: ''
+                left: 0
+                bottom: 0
+                width: 0%
+                height: 2px
+                background: #161C23
+            &:hover
+                &::before
+                    width: 100%
+.header-menu-wrapper-active
+    transform: translateX(100vh)

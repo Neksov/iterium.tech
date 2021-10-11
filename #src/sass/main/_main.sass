@@ -1,0 +1,275 @@
+.firstblock
+	min-height: 1080px
+	&-title
+		font-family: 'Manrope-Light', sans-serif
+		font-weight: 300
+		font-size: 55px
+		line-height: 80px
+		letter-spacing: 0.03em
+		text-transform: uppercase
+		max-width: 400px
+		padding-top: 369px
+		padding-left: 130px
+.production
+	padding: 120px 0px
+	&-wrapper
+		display: flex
+		&-info
+			max-width: 500px
+			width: 100%
+			padding-top: 180px
+			padding-left: 84px
+	&-img
+		max-width: 1058px
+		width: 100%
+		min-height: 842px
+		height: 100%
+		margin-left: 40px
+		position: relative
+		overflow: hidden
+		img
+			min-height: auto
+			max-height: 100%
+			left: 50%
+			width: 100%
+			position: absolute
+			top: 50%
+			transform: translate(-50%, -50%)
+.info
+	margin-top: 40px
+	&-item
+		position: relative
+		padding-left: 37px
+		font-weight: 300
+		font-size: 20px
+		line-height: 37px
+		letter-spacing: 0.03em
+		&:not(:last-child)
+			margin-bottom: 10px
+		&::before
+			position: absolute
+			left: 0
+			top: 14px
+			content: ''
+			width: 11px
+			height: 11px
+			background: url(../img/arrow.svg)no-repeat center center
+.modal
+	padding: 120px 0 110px 242px
+	background: #fff
+	&-wrapper
+		margin-top: 70px
+		position: relative
+	&-swiper
+		&-block
+			max-width: 300px
+			width: 100%
+			min-height: 597px
+			transition: all 0.3s ease-in-out
+			&-img
+				display: block
+				max-width: 300px
+				width: 100%
+				min-height: 597px
+				height: 100%
+				overflow: hidden
+				position: relative
+				img
+					min-height: auto
+					max-height: 100%
+					left: 50%
+					position: absolute
+					top: 50%
+					transform: translate(-50%, -50%)
+			&-title
+				font-family: 'Manrope-Bold', sans-serif
+				font-weight: 600
+				font-size: 22px
+				line-height: 37px
+				letter-spacing: 0.03em
+				color: rgba(22, 28, 35, 0.9)
+				span
+					font-family: 'Manrope-Light', sans-serif
+					font-weight: 300
+			&-subtitle
+				font-weight: 300
+				font-size: 16px
+				line-height: 26px
+				letter-spacing: 0.02em
+				position: relative
+				margin-left: 159px
+				display: none
+				&::after
+					position: absolute
+					content: ''
+					left: -125px
+					top: 50%
+					width: 89px
+					height: 0.5px
+					background: #000000
+			&__wrapper
+				display: flex
+				align-items: center
+				margin-top: 20px
+	.swiper-slide-active
+		max-width: 754px
+		.modal-swiper-block-img
+			max-width: 754px
+		.modal-swiper-block-subtitle
+			display: block
+.options
+	padding: 170px 110px 221px 230px
+	overflow: hidden
+	&-wrapper
+		margin-top: 110px
+		position: relative
+	&-swiper
+		&-block
+			max-width: 420px
+			width: 100%
+			min-height: 121px
+			&-info
+				h2
+					font-family: 'Manrope-Bold', sans-serif
+					font-weight: 600
+					font-size: 18px
+					line-height: 28px
+					letter-spacing: 0.03em
+					text-transform: uppercase
+				p
+					margin-top: 15px
+					font-weight: 300
+					font-size: 16px
+					line-height: 26px
+					letter-spacing: 0.02em
+	.swiper-wrapper
+		flex-wrap: wrap
+		column-gap: 110px
+		row-gap: 80px
+.banner
+	min-height: 1080px
+	padding-left: 175px
+	background: url(../img/banner.jpg)no-repeat center left 175px /cover
+	&-wrapper
+		&-title
+			padding-top: 285px
+			padding-left: 134px
+			font-weight: 300
+			font-size: 35px
+			line-height: 50px
+			letter-spacing: 0.03em
+			text-transform: uppercase
+			color: #161C23
+			opacity: 0.9
+			max-width: 550px
+.possibilities
+	padding: 170px 60px 120px 231px
+	background: url(../img/Frame.png) no-repeat top 0 right 0
+	&-block
+		&-title
+			max-width: 833px
+		&__wrapper
+			margin-top: 133px
+			display: flex
+			flex-wrap: wrap
+			column-gap: 144px
+			row-gap: 94px
+			&-item
+				max-width: 552px
+				width: 100%
+				min-height: 209px
+				position: relative
+				&-number
+					position: absolute
+					left: 0
+					top: 0
+					font-weight: 100
+					font-size: 110px
+					line-height: 100px
+					color: #161C23
+					opacity: 0.7
+				&-text
+					padding-left: 193px
+					font-weight: 300
+					font-size: 20px
+					line-height: 37px
+					letter-spacing: 0.03em
+.news
+	padding: 120px 0 120px 240px
+	&-wrapper
+		display: flex
+		&-info
+			max-width: 451px
+			width: 100%
+			padding-top: 100px
+			&-title
+				font-weight: 100
+				font-size: 30px
+				line-height: 39px
+				letter-spacing: 0.03em
+				color: #161C23
+				opacity: 0.8
+				margin-top: 70px
+				span
+					font-family: 'Manrope-Medium', sans-serif
+					font-weight: 500
+			&-subtitle
+				font-weight: 300
+				font-size: 18px
+				line-height: 30px
+				color: #161C23
+				opacity: 0.5
+				margin: 30px 0 60px
+			&-block
+				font-weight: 300
+				font-size: 16px
+				line-height: 26px
+				color: #161C23
+				opacity: 0.9
+				display: flex
+				align-items: center
+				&-date
+					position: relative
+					margin-right: 30px
+					&::before
+						position: absolute
+						content: ''
+						right: -15px
+						top: 50%
+						transform: translateY(-50%)
+						height: 20px
+						width: 1px
+						background: #161C23
+		&-gallery
+			position: relative
+			max-width: 1147px
+			width: 100%
+			min-height: 799px
+			margin-left: 85px
+.news
+	&-swiper
+		&-block
+			max-width: 1147px
+			width: 100%
+			min-height: 799px
+			&-img
+				display: block
+				max-width: 1147px
+				width: 100%
+				min-height: 799px
+				overflow: hidden
+				position: relative
+				img
+					min-height: auto
+					max-height: 100%
+					width: 100%
+					left: 50%
+					position: absolute
+					top: 50%
+					transform: translate(-50%, -50%)
+	.swiper-pagination
+		display: block
+		width: 100%
+		bottom: -60px
+	&-btn
+		margin-top: 70px
