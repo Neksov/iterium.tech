@@ -1,1 +1,94 @@
 .footer
+    background: #161C23
+    color: #FFFFFF
+    padding: 0 100px
+    &-wrapper
+        padding: 64px 0px
+        display: flex
+        &-info
+            max-width: 350px
+            width: 100%
+            &-logo
+                font-family: 'Manrope-Bold', sans-serif
+                font-weight: 600
+                font-size: 33px
+                line-height: 28px
+                text-transform: uppercase
+                color: #FFFFFF
+                span
+                    font-family: 'Manrope-ExtraLight', sans-serif
+                    font-weight: 200
+                    font-size: 20px
+                &:hover
+                    color: #FFFFFF
+            &-text
+                margin-top: 10px
+                font-weight: 300
+                font-size: 15px
+                line-height: 20px
+                letter-spacing: 0.02em
+                color: #FFFFFF
+                opacity: 0.9
+                max-width: 199px
+            &-subtext
+                margin-top: 217px
+                font-weight: 300
+                font-size: 14px
+                line-height: 26px
+                letter-spacing: 0.03em
+                color: #FFFFFF
+                opacity: 0.4
+        .header-contacts-phone
+            color: #fff
+            margin-bottom: 51px
+            font-size: 40px
+        .header-contacts 
+            align-items: flex-start
+            flex-direction: column
+            margin-top: 218px            
+        &-menu
+            margin-left: 377px
+            display: flex
+            column-gap: 173px
+            flex-wrap: wrap
+            &-item
+                &-title
+                    font-family: 'Manrope-Bold', sans-serif
+                    font-weight: bold
+                    font-size: 22px
+                    line-height: 24px
+                    letter-spacing: -0.01em
+                    text-transform: lowercase
+                    margin-bottom: 40px
+    &-menu
+        &-item
+            position: relative
+            a
+                font-weight: 300
+                font-size: 18px
+                line-height: 25px
+                letter-spacing: 0.03em
+                color: #FFFFFF
+                opacity: 0.7
+                &:hover
+                    opacity: 1
+            &:not(:last-child)
+                margin-bottom: 25px
+                
+.submenu
+    display: none
+    position: relative
+    left: 0
+    top: 10px
+    li a
+        color: #FFFFFF
+        opacity: 1
+.footer-menu-item:hover .submenu
+    display: block
+.footer-menu-item a
+  &:hover
+      color: #fff
+      .arrow_submenu
+          transform: rotate(180deg)
+      svg path
+          stroke: #fff
